@@ -1,10 +1,10 @@
-const express = require('express');
+import express, { json } from 'express';
 const app = express();
-const recomendacionRoutes = require('./routes/recomendacion');
-const cors = require('cors');
+import recomendacionRoutes from './routes/recomendacion.js';
+import cors from 'cors';
 
 app.use(cors());
-app.use(express.json());
+app.use(json());
 app.use('/api', recomendacionRoutes);
 
 app.listen(3001, () => console.log("Servidor corriendo en puerto 3001"));

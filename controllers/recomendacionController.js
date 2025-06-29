@@ -18,4 +18,4 @@ const predecirCluster = (req, res) => {
   });
 };
 
-module.exports = { predecirCluster };
+module.exports = { predecirCluster };

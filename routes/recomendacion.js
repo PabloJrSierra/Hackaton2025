@@ -4,4 +4,4 @@ const { predecirCluster } = require('../controllers/recomendacionController');
 
 router.post('/predecir', predecirCluster);
 
-module.exports = router;
+module.exports = router;
